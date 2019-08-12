@@ -1458,7 +1458,7 @@ usage (register const char *const *cpp)
 {
     (void) fprintf (stderr, *cpp++, program_name, cvs_cmd_name);
     for (; *cpp; cpp++)
-	(void) fprintf (stderr, *cpp);
+	(void) fprintf (stderr, "%s", *cpp);
     exit (EXIT_FAILURE);
 }
 
